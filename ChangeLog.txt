@@ -1,5 +1,9 @@
 Changelog
 
+1.16.0.8
+	Thaniks to forum user @leatherneck6017 for this:
+		Add upgrades for ISRU Drills and Radiators. WIP for antenna range.
+
 1.16.0.7
 	Added new line to blacklist, thanks to @OhioBob
 		BLACKLISTED_MODULE = ModuleTweakMaxResource
