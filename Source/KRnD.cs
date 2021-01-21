@@ -97,8 +97,12 @@ namespace KRnD
             for (int i = 0; i < part.partInfo.Variants.Count; i++)
             {
                 var partVariant = part.partInfo.Variants[i];
-                KRnDVariant v = new KRnDVariant(partVariant.Name, partVariant.Mass);
-                variants.Add(partVariant.Name, v);
+
+                if (!variants.ContainsKey(partVariant.Name))
+                {
+                    KRnDVariant v = new KRnDVariant(partVariant.Name, partVariant.Mass);
+                    variants.Add(partVariant.Name, v);
+                }
             }
             return variants;
         }
